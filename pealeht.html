@@ -1,0 +1,33 @@
+
+			
+            
+          <div id="kogusisu">
+             <h2 id="pealeht">Pealeht</h2>
+               <div id="sisu">
+                 <p id="tekst" onmouseover="sisse();" onmouseout="valja();">
+				 Igal koeral on omad kombed, nii ka minu terjeril, siia saab kombeid kirja panna ja ka pilte ülesse laadida.
+     			 </p>
+                                 			   
+			  <?php  
+              $dir = "laetud";
+              $failid = array();
+              if ($dh = opendir($dir)) { 
+              while (($file = readdir($dh)) !== false) { 
+              if(!is_dir($file)) { 
+              $failid[] = $file;
+              }
+              }
+              closedir($dh); 
+              } else { 
+              die("Ei suuda avada kataloogi $dir");
+              }
+
+              foreach($failid as $val) {
+              $kaust="laetud/";
+              echo"<img src=\"$kaust$val\"  alt='koer' />";
+              
+             }?>
+			   
+			   
+               </div>  
+		   </div> 

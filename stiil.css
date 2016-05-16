@@ -1,0 +1,81 @@
+
+body {
+    background-image: url('bone.jpg');
+    background-position: center top -20px;
+    font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial, sans-serif;
+}
+#ylaosa {
+   
+    background-color: #99CC00;
+    text-align: center;
+   
+  
+}
+#ylaosa h1{
+   
+    font-size:50px;
+    line-height:40px;
+    color:#FF0000;
+    padding-top:40px;
+    letter-spacing:10px;
+}
+#pealkiri{
+   
+    background-color: #FF0000;
+    letter-spacing:10px;
+}
+#alaosa{
+    position: absolute;
+    bottom: 50px;
+    width:99%;
+    background-color: #99CC00;
+    text-align: center;
+  
+    
+}
+
+#kogusisu{
+    position: relative;
+    top: 10px;
+    display: block;
+    text-align: center;
+   
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+#menu ul li a{
+   
+    display: block;
+    font-size:25px;
+    color: #FF0000;
+    padding:50px;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{
+    color: #800000;
+    background-color:#C0C0C0;  
+}
+
+table{
+  
+    padding: 50px;
+    width:90%;
+
+}
+
+td, th { 
+    border: 3px solid gray
+} 
+.validator { 
+    border:0;
+	width:88px;
+	height:31px
+} 
+
+img { 
+  max-width:300px; 
+  max-height:300px; }
