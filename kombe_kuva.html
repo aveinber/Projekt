@@ -1,11 +1,9 @@
+<div id="kogusisu">
 <h2>Kombed</h2>
-
-
-<div>
 <ol>
 <?php foreach($kombed as $komme){ ?>
-				<li><?php echo $komme['kirjeldus']?></li>
+				<li><?php echo htmlspecialchars($komme['kirjeldus'])?></li>
 <?php } ?>
 
-  </ol> 
+ </ol> 
 </div>	

@@ -20,7 +20,7 @@ function regatud(){
     if (!mysqli_query($connection,$query)) {
     die('Error: ' . mysqli_error($connection));
     }
-    echo "Kasutaja korras, lisa pilt";
+    echo "Kasutaja korras, lisa komme või lisa pilt";
     mysqli_close($connection);
 	}	
 
@@ -94,7 +94,7 @@ function kontrollin1(){
 	}
     if($kontrollitud!="true"){
     echo "Sisesta uuesti, midagi läks valesti";
-    include_once ("view/login.html");
+    include_once ("view/login1.html");
     }	
 }	
 function kontrollin2(){
@@ -120,7 +120,7 @@ function kontrollin2(){
 	}
     if($kontrollitud!="true"){
     echo "Sisesta uuesti, midagi läks valesti";
-    include_once ("view/login.html");
+    include_once ("view/login2.html");
     }	
 }	
 

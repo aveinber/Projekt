@@ -2,10 +2,12 @@
 			
             
           <div id="kogusisu">
-             <h2 id="pealeht">Pealeht</h2>
+             <h2 id="pealeht" class="leht">Pealeht</h2>
                <div id="sisu">
                  <p id="tekst" onmouseover="sisse();" onmouseout="valja();">
-				 Igal koeral on omad kombed, nii ka minu terjeril, siia saab kombeid kirja panna ja ka pilte ülesse laadida.
+				 Igal koeral on omad kombed, nii ka minu terjeril,kui olete märganud minu koeral mõnda huvitavat kommet pange see siia kirja. 
+				 </br>Samuti võite siia ülesse laadida ka pildi, mis te mu koerast teinud olete, oleksin teile väga tänulik.
+				 </br>Ühendust minuga võite võtta aadressil fijioffortis ätt koer punkt ee.
      			 </p>
                                  			   
 			  <?php  
@@ -23,9 +25,11 @@
               }
 
               foreach($failid as $val) {
-              $kaust="laetud/";
+             // <div class="pilt">
+	          $kaust="laetud/";
               echo"<img src=\"$kaust$val\"  alt='koer' />";
-              
+              //echo"</a>";
+	          //</div>
              }?>
 			   
 			   

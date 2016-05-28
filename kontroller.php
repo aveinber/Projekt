@@ -22,7 +22,13 @@ case "regan":
 break;
 
 case "regatud":
-    regatud();
+    if($_POST['passwd1']==$_POST['passwd2']){
+	regatud();	
+	}else{
+	echo "Paroolid, mis Te sisestasite ei kattu, proovi uuesti !!!";
+	include("view/signup.html");
+	}
+    
 break;						
 
 case "fotohaldus":
